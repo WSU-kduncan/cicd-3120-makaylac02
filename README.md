@@ -9,8 +9,13 @@
 * Installing docker + dependencies:
   * I installed WSL2 Docker at this website: https://docs.docker.com/desktop/windows/install/
     * Once installed, verify WSL2 engine is turned on.
-* Building the container: docker run -it -v /home/makaylac/CEG3120/cicd-3120-makaylac02/website:/from_host ubuntu
+* Building the container: 
+  * You would need to create a docker file that holds the information you need to run the container. Basically allows you to install packages that you'd install once the container was created, copy projects over into the container, and run commands during the creation so that you don't have to run them after every creation.
+  * $ docker build . is the command that would build the container using the Dockerfile in the current directory. 
+    * Can specify a tag by adding ":0.1", which could be filled with anything, but this one could be used to specify version number. 
 * How to run the container: 
-  * To run a container you would use the command "docker run x" and fill in with which container you'd like to run.
+  * docker run -dit --name my-running-app -p 8080:80 my-apache2
+  * Source: https://hub.docker.com/_/httpd
 * How to view the project:
-  * .
+  * Access with the port: http://localhost:8080/
+  * Source: https://hub.docker.com/_/httpd
