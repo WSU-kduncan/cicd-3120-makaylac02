@@ -39,3 +39,20 @@
       * .
     * Variables to change (repositroy, etc.)
       * . 
+
+  # Part 3 - Deployment
+
+    * Container restart script, what it does:
+      * .
+    * Webhook task definition file, what it does: 
+      * .
+    * Setting up webhook: 
+    * How I created my own listener
+      * .
+    * How I installed and am running the webhook on github
+      * 
+    * How do set up notifier in Github or DockerHub
+      * .
+    
+    * Notes on how I got things working, any resources used outside of notes and lecture.
+      * .
