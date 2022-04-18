@@ -19,3 +19,23 @@
 * How to view the project:
   * Access with the port: http://localhost:8080/
   * Source: https://hub.docker.com/_/httpd
+
+
+  # Part 2 - GitHub Actions and DockerHub
+  
+  * Create DockerHub public repo, process to create:
+    * . 
+  * How to authenticate with Dockerhub via CLI using Dockhub credentials
+    * .
+  * Recommended credentials: 
+    * .
+  * Configuring GitHub secrets
+    * What does it do and when?
+      * .
+    * Set secrets and secret names
+      * .
+  * Behavior of Github workflow
+    * What does it do and when? 
+      * .
+    * Variables to change (repositroy, etc.)
+      * . 
