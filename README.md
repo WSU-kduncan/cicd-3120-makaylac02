@@ -23,36 +23,36 @@
 
   # Part 2 - GitHub Actions and DockerHub
   
-  * Create DockerHub public repo, process to create:
+* Create DockerHub public repo, process to create:
+  * . 
+* How to authenticate with Dockerhub via CLI using Dockhub credentials
+  * .
+* Recommended credentials: 
+  * .
+* Configuring GitHub secrets
+  * What does it do and when?
+    * .
+  * Set secrets and secret names
+    * .
+* Behavior of Github workflow
+  * What does it do and when? 
+    * .
+  * Variables to change (repositroy, etc.)
     * . 
-  * How to authenticate with Dockerhub via CLI using Dockhub credentials
-    * .
-  * Recommended credentials: 
-    * .
-  * Configuring GitHub secrets
-    * What does it do and when?
-      * .
-    * Set secrets and secret names
-      * .
-  * Behavior of Github workflow
-    * What does it do and when? 
-      * .
-    * Variables to change (repositroy, etc.)
-      * . 
 
   # Part 3 - Deployment
 
-    * Container restart script, what it does:
-      * .
-    * Webhook task definition file, what it does: 
-      * .
-    * Setting up webhook: 
-    * How I created my own listener
-      * .
-    * How I installed and am running the webhook on github
-      * 
-    * How do set up notifier in Github or DockerHub
-      * .
+* Container restart script, what it does:
+  * .
+* Webhook task definition file, what it does: 
+  * .
+* Setting up webhook: 
+* How I created my own listener
+  * .
+* How I installed and am running the webhook on github
+  * 
+* How do set up notifier in Github or DockerHub
+  * .
     
-    * Notes on how I got things working, any resources used outside of notes and lecture.
-      * .
+* Notes on how I got things working, any resources used outside of notes and lecture.
+  * .
