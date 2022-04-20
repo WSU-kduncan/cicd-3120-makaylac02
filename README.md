@@ -29,9 +29,8 @@
   * First you will need to obtain your access token, which is located under the security tab in settings.
   * Then, in my ubuntu terminal, while the docker desktop app is open, I type the command: "docker login -u makaylac02". makaylac02 being my docker username. 
   * The password is the token that I obtained in the security tab. I am now authenticated
-  * A token is recommended over a password because it is harder to break.
 * Recommended credentials: 
-  * .
+  * A token is recommended over a password because it is harder to break.
 * Configuring GitHub secrets
   * What does it do and when?
     * .
