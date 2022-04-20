@@ -27,15 +27,16 @@
   * To create a DockerHub public repo, I first had to create an account on DockerHub. I chose the free option and used my school email to sign up. Then, I hit the create repository button. I named my repository, "site", I did not set a description, and I set the repository to public. 
 * How to authenticate with Dockerhub via CLI using Dockhub credentials
   * First you will need to obtain your access token, which is located under the security tab in settings.
-  * Then, in my ubuntu terminal, while the docker desktop app is open, I type the command: "docker login -u makaylac02". makaylac02 being my docker username. 
+  * Then, in my ubuntu terminal, while the docker desktop app is open, I type the command: "docker login -u username". username being my DockerHub username. 
   * The password is the token that I obtained in the security tab. I am now authenticated
+  * I can now use things like docker push and docker pull.
 * Recommended credentials: 
-  * A token is recommended over a password because it is harder to break.
+  * A token is recommended over a password because it is harder to break. Also, if you use a password, and someone gets that password, things can become scary and dangerous. A unique token is a lot more safe.
 * Configuring GitHub secrets
   * What does it do and when?
-    * .
+    * GitHub secrets allows us to keep our sensitive information that is needed to be written in our repos, safe. So, for example, I may want to put my Docker authentication token into a GitHub secret so that it is hidden and I can use the token without a second thought. 
   * Set secrets and secret names
-    * .
+    * I set a TOKEN secret for my Docker token.
 * Behavior of Github workflow
   * What does it do and when? 
     * Github workflows are used to test, build, release, or deploy projects on Github. In my mind, I imagine it as a checklist. A way to keep organized and set a "flow of work".
