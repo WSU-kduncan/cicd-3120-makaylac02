@@ -24,9 +24,12 @@
   # Part 2 - GitHub Actions and DockerHub
   
 * Create DockerHub public repo, process to create:
-  * . 
+  * To create a DockerHub public repo, I first had to create an account on DockerHub. I chose the free option and used my school email to sign up. Then, I hit the create repository button. I named my repository, "site", I did not set a description, and I set the repository to public. 
 * How to authenticate with Dockerhub via CLI using Dockhub credentials
-  * .
+  * First you will need to obtain your access token, which is located under the security tab in settings.
+  * Then, in my ubuntu terminal, while the docker desktop app is open, I type the command: "docker login -u makaylac02". makaylac02 being my docker username. 
+  * The password is the token that I obtained in the security tab. I am now authenticated
+  * A token is recommended over a password because it is harder to break.
 * Recommended credentials: 
   * .
 * Configuring GitHub secrets
@@ -37,7 +40,7 @@
 * Behavior of Github workflow
   * What does it do and when? 
     * .
-  * Variables to change (repositroy, etc.)
+  * Variables to change (repository, etc.)
     * . 
 
   # Part 3 - Deployment
