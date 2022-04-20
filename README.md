@@ -38,9 +38,15 @@
     * .
 * Behavior of Github workflow
   * What does it do and when? 
-    * .
+    * Github workflows are used to test, build, release, or deploy projects on Github. In my mind, I imagine it as a checklist. A way to keep organized and set a "flow of work".
   * Variables to change (repository, etc.)
-    * . 
+    * name ( repository)
+    * when to run ( what event )
+      * ex. on a push, what branch
+    * jobs ( set of things that happen when the event is triggered ) 
+    * What are things running on
+      * ex. ubuntu-latest
+    * Job steps 
 
   # Part 3 - Deployment
 
