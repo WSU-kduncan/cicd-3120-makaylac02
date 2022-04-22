@@ -76,3 +76,13 @@
   * https://docs.docker.com/desktop/windows/install/
   * https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications
   * https://docs.docker.com/registry/notifications/
+
+
+# Part 4 - Diagram
+```mermaid
+  graph TD;
+      A-->B;
+      B-->C;
+      C-->D;
+      D-->E;
+```
