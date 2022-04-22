@@ -46,20 +46,30 @@
     * What are things running on
       * ex. ubuntu-latest
     * Job steps 
+    * Most importantly, I used the template supplied from https://hub.docker.com/_/httpd and changed the secret names and Dockerhub repo name so that they matched mine.
 
   # Part 3 - Deployment
 
 * Container restart script, what it does:
-  * .
+  * The container restart will stop, remove, and create the container whenever new content is pulled from my Dockerhub repo.
 * Webhook task definition file, what it does: 
-  * .
+  * It directs itself to my script, 'containerRestartScript.sh' and applies it to the web, updating the web when necessary. 
 * Setting up webhook: 
+  * I followed the commands in the slides and the website: https://hub.docker.com/_/httpd.
+  * Setting up the webhook required me to download webhook onto my terminal and then creating a json template. I installed using Go and made turned my json into a service as provided in the slides. 
 * How I created my own listener
-  * .
+  * I created an end-point named "HELLO-END"
 * How I installed and am running the webhook on github
-  * 
+  * So the outcome should have this: http://yourserver:9000/hooks/id?cheese=12s35g3., but I am getting an issues where my address is already in use. I've obtained this information from these 2 websites: https://hub.docker.com/_/httpd and https://github.com/adnanh/webhook.
 * How do set up notifier in Github or DockerHub
-  * .
+  * I believe this is the resource that would be useful in doing this, for DockerHub specifically: https://docs.docker.com/registry/notifications/
+    * We would need to add a section in our .json file that we created earlier, so that it knows how to send notifications. 
+  * For Github, this is a resource that I found: https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications
+    * For Github, it is more about adjusting the settings on a repo, and choosing who recieves what notificataions.
     
 * Notes on how I got things working, any resources used outside of notes and lecture.
-  * .
+  * https://github.com/adnanh/webhook
+  * https://hub.docker.com/_/httpd
+  * https://docs.docker.com/desktop/windows/install/
+  * https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications
+  * https://docs.docker.com/registry/notifications/

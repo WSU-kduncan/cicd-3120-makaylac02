@@ -1,0 +1,21 @@
+[
+    { 
+      "id": "HELLO-END",
+      "execute-command": "./containerRestartScript.sh",
+      "command-working-directory": "/home/ubuntu/containerRestartScript.sh",
+      "response-message": "Executing redeploy web resume container",
+      "trigger-rule":
+      {
+        "match":
+        {
+          "type": "value",
+          "value": "12s35g3",
+          "parameter":
+          {
+            "source": "url",
+            "name": "cheese"
+          }
+        }
+      }
+    }
+]
