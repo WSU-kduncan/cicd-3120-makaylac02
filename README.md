@@ -1,6 +1,9 @@
 ## Name: Makayla Carr
  cicd-3120-makaylac02
 
+# Notes :
+* I just want to add that my DockerFile can be found in my website folder. 
+
 # Part 1 - Dockerize it
 ## Documentation
 
