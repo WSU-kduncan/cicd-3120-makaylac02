@@ -81,9 +81,9 @@
 # Part 4 - Diagram
 ```mermaid
   graph TD;
-      Pull latest version of the image-->Remove unused images;
-      Remove unused images-->Stop the container;
-      Stop the container-->Remove the container;
-      Remove the container-->Recreate the container;
-      Recreate the container-->Pull latest version of the image;
+      A Pull latest version of the image-->B Remove unused images;
+      B Remove unused images-->C Stop the container;
+      C Stop the container-->D Remove the container;
+      D Remove the container-->E Recreate the container;
+      E Recreate the container-->A Pull latest version of the image;
 ```
