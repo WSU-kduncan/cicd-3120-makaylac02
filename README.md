@@ -10,15 +10,13 @@
   * I installed WSL2 Docker at this website: https://docs.docker.com/desktop/windows/install/
     * Once installed, verify WSL2 engine is turned on.
 * Building the container: 
-  * You would need to create a docker file that holds the information you need to run the container. Basically allows you to install packages that you'd install once the container was created, copy projects over into the container, and run commands during the creation so that you don't have to run them after every creation.
-  * $ docker build . is the command that would build the container using the Dockerfile in the current directory. 
-    * Can specify a tag by adding ":0.1", which could be filled with anything, but this one could be used to specify version number. 
+  * I created a directory called website that will hold my html file named hello.html and a Dockerfile.
+  * I then used the temple provided from this website: https://hub.docker.com/_/httpd . This was used in my Dockerfile.
+  * I then used the command: 'docker build . -t hello-test' to build a container named hello-test
 * How to run the container: 
-  * docker run -dit --name my-running-app -p 8080:80 my-apache2
-  * Source: https://hub.docker.com/_/httpd
+  * Now to run the container I just built, I run the command: docker run -p 80:80 -d --name container-hello hello-test
 * How to view the project:
-  * Access with the port: http://localhost:8080/
-  * Source: https://hub.docker.com/_/httpd
+  * Since I used the source, https://hub.docker.com/_/httpd, I only need to type in localhost to see my site. If I had not had a port attached, then I may have had to type something like localhost:8080.
 
 
   # Part 2 - GitHub Actions and DockerHub
@@ -36,7 +34,7 @@
   * What does it do and when?
     * GitHub secrets allows us to keep our sensitive information that is needed to be written in our repos, safe. So, for example, I may want to put my Docker authentication token into a GitHub secret so that it is hidden and I can use the token without a second thought. 
   * Set secrets and secret names
-    * I set a TOKEN secret for my Docker token.
+    * I set DOCKER_USERNAME which contains my DockerHub username and DOCKER_PASSWORD which contains my DockerHub token.
 * Behavior of Github workflow
   * What does it do and when? 
     * Github workflows are used to test, build, release, or deploy projects on Github. In my mind, I imagine it as a checklist. A way to keep organized and set a "flow of work".
